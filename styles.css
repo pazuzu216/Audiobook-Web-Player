@@ -1,0 +1,59 @@
+/* Audiobook webplayer v1.07 writen by Gisle Kirkhaug. Licensed under GPL v3. 2025*/
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;  /* Sets the background color to a dark gray */
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1e88e5;   /* Sets background color for buttons to blueish */
+    color: white;
+    border: none;                  /* Removes default button border */
+    border-radius: 5px;            /* Rounds the corners of buttons */
+}
+
+button:hover {
+    background-color: #1565c0;  /* Sets background color for buttons to a darker blue */
+}
+
+input {
+    background-color: #333;     /* Sets background color for input fields to a dark grey */
+    color: white;
+    border: 1px solid #555;     /* Sets border for input fields and color to a lighter grey*/
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;         /* Removes default list styling */
+    padding: 0;
+}
+
+li {
+    background-color: #333;     /* Sets background color for list items to a dark grey */
+    margin: 5px 0;                /* 3 lines below round and style the borders of the filelist */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.playing {
+    background-color: #666;     /* Setts playing item in file list to a even lighter grey */
+    cursor: pointer;
+}
+
+.clickable {                      /* For items in the file list that are NOT playing */
+    cursor: pointer;
+}
+
+.help {                           /* For the ? help button */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    text-decoration: none; 
+    font-size: 24px;
+    cursor: help;
+}
