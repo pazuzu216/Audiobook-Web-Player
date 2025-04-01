@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audiobook webplayer 1.07</title>
+    <title>Audiobook webplayer 1.08</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -14,7 +14,11 @@
     <h2>Audiobook webplayer</h2>
     <i>Web based audioplayer for local files with sleep timer by Gisle Kirkhaug</i><BR>
     <a href="help.html" class="help">❓</a>
-    <input type="file" id="directoryInput" webkitdirectory directory multiple onchange="storeAndDisplayFiles()"><BR>
+    <button type="button" onclick="document.getElementById('directoryInput').click();">
+        Select Audio Directory
+    </button>
+    <input type="file" id="directoryInput" webkitdirectory directory multiple accept="audio/*" onchange="storeAndDisplayFiles()" style="display: none;">
+    <BR>
     <audio id="audioPlayer" controls></audio><br>
     <button onclick="skipBackward()">⏪</button>
     <button onclick="skipForward()">⏩</button>
