@@ -20,7 +20,7 @@ To try the player online, follow this link: [https://kirkhaug.net/audiobook\_web
 ## How to Use
 
 1.  **Load Files:**
-    * Click the "Choose Files" button and select the directory containing your audio files.
+    * Click the "Select Audio Directory" button and select the directory containing your audio files.
 2.  **Playback:**
     * Click on a file in the displayed list to begin playback.
     * Playback will resume from the last saved position if you reload the page and select the same directory.
