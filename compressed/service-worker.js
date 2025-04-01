@@ -1,0 +1,1 @@
+self.addEventListener("install",e=>{e.waitUntil(caches.open("audioplayer-cache").then(e=>e.addAll(["./","./index.html","./styles.css","./manifest.json","./web-app-manifest-192x192.png","./web-app-manifest-512x512.png"])))}),self.addEventListener("fetch",e=>{e.respondWith(caches.match(e.request).then(t=>t||fetch(e.request)))});
