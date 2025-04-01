@@ -287,3 +287,10 @@ function storeFadeTimeValue() {
     fadeTimeValue = parseInt(document.getElementById('fadeTimeInput').value);           // Read fadetimer from GUI/html text box
     localStorage.setItem('fadeTimeValue', fadeTimeValue);                               // Write fadetimer to localstorage, so that it is persistent
 }
+
+// Check if the browser supports service workers and register the service worker, so we can install the app on the home screen of the computer
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js')                     // Register the service worker, file in the same directory as this file
+      .then(reg => console.log('Service Worker registered!', reg))              // Log success message to console
+      .catch(err => console.log('Service Worker registration failed:', err));   // Log error message to console
+}

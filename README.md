@@ -44,6 +44,7 @@ To try the player online, follow this link: [https://kirkhaug.net/audiobook\_web
 1.  Download the files from the repository.
 2.  Place the downloaded files into a directory on your local machine or webserver.
 3.  To run locally, simply open the `index.html` file in your preferred web browser.
+4.  This application supports Progressive Web App (PWA) installation. When accessed from a supported browser like Google Chrome, Edge, or Safari (on iOS), you can install it by clicking the install prompt or adding it to your home screen.
 
 ## Contributing
 
