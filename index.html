@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audiobook webplayer 1.09</title>
+    <title>Audiobook webplayer 1.10</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -21,8 +21,8 @@
     <input type="file" id="directoryInput" webkitdirectory directory multiple accept="audio/*" onchange="storeAndDisplayFiles()" style="display: none;">
     <BR>
     <audio id="audioPlayer" controls></audio><br>
-    <button onclick="skipBackward()">⏪</button>
-    <button onclick="skipForward()">⏩</button>
+    <button onclick="skipBackward()"><<</button>
+    <button onclick="skipForward()">>></button>
     <p>Sleep Timer: <span id="sleepTimerDisplay">Not started</span></p>
     <ul id="fileList"></ul>
     <label for="sleepTimerInput">Set Sleep Timer (minutes):</label>
