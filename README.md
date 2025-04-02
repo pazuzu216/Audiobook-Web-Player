@@ -25,7 +25,7 @@ To try the player online, follow this link: [https://kirkhaug.net/audiobook\_web
     * Click on a file in the displayed list to begin playback.
     * Playback will resume from the last saved position if you reload the page and select the same directory.
 3.  **Skip Controls:**
-    * Use the ⏪ and ⏩ buttons to skip backward or forward.
+    * Use the << and >> buttons to skip backward or forward.
     * Adjust the skip time (in minutes) via the input field.
 4.  **Sleep Timer:**
     * Enter the desired sleep timer duration (in minutes).
