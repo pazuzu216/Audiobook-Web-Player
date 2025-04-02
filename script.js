@@ -1,5 +1,5 @@
 /**
- * Audiobook webplayer v1.07 writen by Gisle Kirkhaug. Licensed under GPL v3. 2025
+ * Audiobook webplayer v1.10 writen by Gisle Kirkhaug. Licensed under GPL v3. 2025
  *
  * This script provides functionality to play local audio files, control playback,
  * and set a sleep timer to automatically stop playback after a specified duration.
@@ -259,6 +259,9 @@ function storeAndDisplayFiles() {
     // Filter audio files, thats what we want, files we can play
     const files = Array.from(directoryInput.files).filter(file => file.type.startsWith('audio/') || /\.(mp3|m4b|aac|mka|weba|wav|ogg|flac)$/i.test(file.name));
     if (files.length === 0) return;                                                     // If there are no audio files, return
+    
+    files.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));   // Sort files alphabetically by name
+
     audioFiles = files;                                                                 // Array of audio files, global
     storedFileNames = files.map(file => file.name);                                     // Array of names of audio files, also global
 
